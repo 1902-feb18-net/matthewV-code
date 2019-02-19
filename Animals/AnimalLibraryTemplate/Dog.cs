@@ -36,14 +36,9 @@ namespace Animals.Library
         // this here is manual version of
         // auto-property.
         private string _name;
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
+        public string Name {
+            get{ return _name; }
+            set {
                 // inside "set"
                 // we have implicit argument "value"
                 // could do null/empty-checks, etc.
@@ -56,6 +51,7 @@ namespace Animals.Library
         // we can have properties without set
         // (readonly)
         public string Color { get; } = "brown";
+
         public string Breed { get; set; }
 
         // methods
