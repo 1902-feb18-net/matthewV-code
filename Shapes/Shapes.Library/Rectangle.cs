@@ -6,8 +6,8 @@ namespace Shapes.Library
 {
     class Rectangle : IShape
     {
-        public double length { get; set; }
-        public double width { get; set; }
+        public virtual double length { get; set; }
+        public virtual double width { get; set; }
 
         public string Color { get; set; }
 
